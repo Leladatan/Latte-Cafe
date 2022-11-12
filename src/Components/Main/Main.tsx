@@ -19,7 +19,6 @@ export default function Main() {
             <Menu
                 title="Menu"
                 text="We change our menu every season. Here is what we are currently dishing up."
-                buttonText={["Food Menu", "Drinks Menu", "Takeaway Menu"]}
                 menuTitle="Latte Cafe"
             />
             <Booking/>

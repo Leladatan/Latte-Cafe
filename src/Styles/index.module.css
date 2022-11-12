@@ -59,7 +59,9 @@
 .header__social > a > img {
   transition: all 0.3s ease-in-out;
 }
+
 .header__social > a > img:hover {
+  cursor: pointer;
   filter: sepia(1) hue-rotate(3deg) saturate(3);
 }
 
@@ -210,6 +212,7 @@
 }
 
 .btn__light_active {
+  text-align: center;
   cursor: pointer;
   width: 100%;
   color: #fff;
@@ -224,6 +227,7 @@
 }
 
 .btn__light {
+  text-align: center;
   cursor: pointer;
   width: 100%;
   color: #6F6F64;

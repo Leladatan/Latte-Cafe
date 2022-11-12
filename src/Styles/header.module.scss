@@ -26,6 +26,7 @@
   background-repeat: no-repeat;
   background-size: 0% 2px;
   transition: background-size .2s;
+
   &:hover {
     color: darksalmon;
     background-size: 100% 2px;
@@ -49,15 +50,19 @@
   text-align: center;
   padding: 0;
   margin: 0;
+
   &:hover {
     color: darksalmon;
   }
 }
+
 .header__social > a > img {
   transition: all .3s ease-in-out;
-  &:hover {
-    filter: sepia(1) hue-rotate(3deg) saturate(3);
-  }
+}
+
+.header__social > a > img:hover {
+  cursor: pointer;
+  filter: sepia(1) hue-rotate(3deg) saturate(3);
 }
 
 @media screen and (max-width: 769px) {

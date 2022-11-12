@@ -1,20 +1,33 @@
 import styles from '../../../Styles/index.module.scss';
-import classNames from "classnames";
-import {useState} from "react";
+import {IBtnChange} from "../../../Interfaces/IBtnChange";
+import BtnItem from "./BtnItem";
 
 interface IMenu {
     title: string
     text: string
-    buttonText: string[]
     menuTitle: string
 }
 
+
 export default function Menu(props: IMenu) {
 
-
-    const btnClasses = classNames(`${styles.btn__light}, ${styles.btn__light_active}`)
-    const btnClassTrue = classNames(` ${styles.btn__light_active}`)
-    const btnClassesFalse = classNames(`${styles.btn__light}`)
+    const btnItem: IBtnChange[] = [
+        {
+            id: "Food",
+            title: "Food Menu",
+            isActive: true,
+        },
+        {
+            id: "Drinks",
+            title: "Drinks Menu",
+            isActive: false,
+        },
+        {
+            id: "Takeaway",
+            title: "Takeaway Menu",
+            isActive: false,
+        },
+    ]
 
     return (
         <section className={styles.menu}>
@@ -30,18 +43,9 @@ export default function Menu(props: IMenu) {
                             </p>
                         </div>
                         <div className={styles.btns__menu}>
-                            <button
-                                className={btnClassTrue}
-                            >
-                                {props.buttonText[0]}</button>
-                            <button
-                                className={btnClassesFalse}
-                            >
-                                {props.buttonText[1]}</button>
-                            <button
-                                className={btnClassesFalse}
-                            >
-                                {props.buttonText[2]}</button>
+                            {btnItem.map(item => (
+                                <BtnItem item={item} key={item.id}/>
+                            ))}
                         </div>
                     </div>
                     <div className={styles.menu__content_menu}>

@@ -7,9 +7,9 @@ import inst from '../../../Image/header/inst.svg';
 export default function Social() {
     return (
         <div className={styles.header__social}>
-            <a href="#" className=""><img src={me} alt="facebook" className="facebook"/></a>
-            <a href="#" className=""><img src={fb} alt="message" className="message"/></a>
-            <a href="#" className=""><img src={inst} alt="inst" className="instagram"/></a>
+            <a href="#"><img src={me} alt="facebook"/></a>
+            <a href="#"><img src={fb} alt="message"/></a>
+            <a href="#"><img src={inst} alt="inst"/></a>
         </div>
     )
 }
