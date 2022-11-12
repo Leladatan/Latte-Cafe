@@ -34,3 +34,11 @@
   font-size: 32px;
   text-align: center;
 }
+
+@media screen and (max-width: 769px) {
+
+  .info {
+    padding: 4rem 0;
+  }
+
+}

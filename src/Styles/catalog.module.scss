@@ -27,14 +27,37 @@
 .firstImage {
   cursor: pointer;
   vertical-align: top;
+  width: 100%;
+  max-width: 650px;
 }
 
 .secondImage {
   cursor: pointer;
   vertical-align: top;
+  width: 100%;
+  max-width: 650px;
 }
 
 .thirdImage {
   cursor: pointer;
   vertical-align: top;
+  width: 100%;
+  max-width: 650px;
+}
+
+@media screen and (max-width: 769px) {
+
+  .catalog {
+    padding: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .catalog__content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
 }

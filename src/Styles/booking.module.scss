@@ -28,3 +28,19 @@
   text-align: center;
   max-width: 235px;
 }
+
+@media screen and (max-width: 769px) {
+
+  .booking {
+    padding: 2rem 0;
+  }
+
+  .booking__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+}

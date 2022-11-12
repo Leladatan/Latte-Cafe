@@ -1,3 +1,38 @@
 .footer {
+  padding: 1rem 0;
+  background-color: #cdcdcd;
+}
 
+.footer__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer_company {
+  color: #696969;
+}
+.footer_link {
+  color: #696969;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .footer__content {
+    align-items: baseline;
+  }
+
+  .footer_list {
+    flex-direction: column;
+  }
 }

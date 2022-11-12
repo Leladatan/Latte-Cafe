@@ -32,4 +32,42 @@ ol {
   list-style: none;
 }
 
+//calc
+$maxWidth: 1300;
+
+@mixin adaptive-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $addMobSize: $pcSize - $mobSize* 0.7;
+
+  @media (max-width: 767px) {
+    font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+  }
+
+  @media (max-width: 767px) {
+    font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+  }
+}
+
+//@include adaptive-font(max, min);
+
+.text__logo {
+  @include adaptive-font(64, 20);
+}
+
+.text__info {
+  @include adaptive-font(32, 18);
+}
+
+.text__menu {
+  @include adaptive-font(32, 18);
+}
+
+.content_menu_title_logo {
+  @include adaptive-font(50, 24);
+}
+
+.booking__text {
+  @include adaptive-font(28, 18);
+}
+
 

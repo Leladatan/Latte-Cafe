@@ -59,3 +59,21 @@
     filter: sepia(1) hue-rotate(3deg) saturate(3);
   }
 }
+
+@media screen and (max-width: 769px) {
+
+  .navbar {
+    display: none;
+  }
+  .header__social {
+    width: auto;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header__social {
+    display: none;
+  }
+
+}

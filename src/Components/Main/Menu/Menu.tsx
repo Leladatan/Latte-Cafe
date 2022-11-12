@@ -1,4 +1,6 @@
 import styles from '../../../Styles/index.module.scss';
+import classNames from "classnames";
+import {useState} from "react";
 
 interface IMenu {
     title: string
@@ -8,6 +10,11 @@ interface IMenu {
 }
 
 export default function Menu(props: IMenu) {
+
+
+    const btnClasses = classNames(`${styles.btn__light}, ${styles.btn__light_active}`)
+    const btnClassTrue = classNames(` ${styles.btn__light_active}`)
+    const btnClassesFalse = classNames(`${styles.btn__light}`)
 
     return (
         <section className={styles.menu}>
@@ -24,13 +31,16 @@ export default function Menu(props: IMenu) {
                         </div>
                         <div className={styles.btns__menu}>
                             <button
-                                className={styles.btn__light_active}>
+                                className={btnClassTrue}
+                            >
                                 {props.buttonText[0]}</button>
                             <button
-                                className={styles.btn__light}>
+                                className={btnClassesFalse}
+                            >
                                 {props.buttonText[1]}</button>
                             <button
-                                className={styles.btn__light}>
+                                className={btnClassesFalse}
+                            >
                                 {props.buttonText[2]}</button>
                         </div>
                     </div>

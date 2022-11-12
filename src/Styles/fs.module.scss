@@ -8,6 +8,50 @@
   background-image: url("../Image/main/fs/fs.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 999px) {
+  .fs__content {
+    height: 500px;
+  }
+
+}
+
+@media screen and (max-width: 769px) {
+
+  .fs__content {
+    height: 400px;
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .fs__content {
+    height: 350px;
+  }
+
+}
+
+@media screen and (max-width: 520px) {
+
+  .fs__content {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  .fs__content {
+    height: 200px;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  .fs__content {
+    height: 150px;
+  }
+
 }
