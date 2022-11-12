@@ -224,10 +224,6 @@
   border: 2px solid #6F6F64;
   transition: all 0.3s ease-in-out;
 }
-.btn__light_active:hover {
-  color: #6F6F64;
-  background-color: #fff;
-}
 
 .btn__light {
   text-align: center;
@@ -238,10 +234,6 @@
   background-color: inherit;
   border: 2px solid #6F6F64;
   transition: all 0.3s ease-in-out;
-}
-.btn__light:hover {
-  color: #fff;
-  background-color: #6F6F64;
 }
 
 .content_menu_title_logo {
