@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "header.module.scss";
+@import "fs.module.scss";
+@import "info.module";
+@import "menu.module";
+@import "booking.module";
+@import "catalog.module";
+@import "footer.module";
+
+//global
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+ol {
+  list-style: none;
+}
+
+

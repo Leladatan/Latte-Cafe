@@ -1,0 +1,36 @@
+// info
+.info {
+  padding: 10rem 0;
+}
+
+.info__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title__info {
+  font-family: 'Azeret Mono', monospace;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+  &:hover {
+    color: #D27487;
+    background-size: 100% 2px;
+  }
+}
+
+.text__info {
+  font-size: 32px;
+  text-align: center;
+}

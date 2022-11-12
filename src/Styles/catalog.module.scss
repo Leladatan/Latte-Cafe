@@ -1,0 +1,40 @@
+.catalog {
+  padding: 5rem 0;
+}
+
+.catalog__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+
+  &_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+
+    &_top {
+      max-width: 700px;
+    }
+
+    &_bottom {
+      max-width: 700px;
+    }
+  }
+}
+
+
+.firstImage {
+  cursor: pointer;
+  vertical-align: top;
+}
+
+.secondImage {
+  cursor: pointer;
+  vertical-align: top;
+}
+
+.thirdImage {
+  cursor: pointer;
+  vertical-align: top;
+}
