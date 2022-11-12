@@ -6,12 +6,12 @@ export default function Footer() {
 
     const itemIFooterLink: IFooterLink[]  = [
         {
-            id: 1,
+            id: 5,
             title: "Built by Nikolai Bain.",
             link: "/",
         },
         {
-            id: 2,
+            id: 6,
             title: "Powered by Webflow.",
             link: "/",
         },
