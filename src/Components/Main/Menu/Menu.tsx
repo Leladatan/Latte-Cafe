@@ -15,17 +15,14 @@ export default function Menu(props: IMenu) {
         {
             id: "Food",
             title: "Food Menu",
-            // isActive: true,
         },
         {
             id: "Drinks",
             title: "Drinks Menu",
-            // isActive: false,
         },
         {
             id: "Takeaway",
             title: "Takeaway Menu",
-            // isActive: false,
         },
     ]
 
