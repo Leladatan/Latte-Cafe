@@ -7,7 +7,7 @@ interface INavItemProps {
 
 export default function NavItem(props: INavItemProps) {
     return (
-        <li className="header__list_item">
+        <li className={styles.header__list_item}>
             <a href={props.item.link} className={styles.header__list_link}>{props.item.title}</a>
         </li>
     )
